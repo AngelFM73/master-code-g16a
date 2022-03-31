@@ -1,0 +1,288 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+}
+
+/* -----------inicia header---------- */
+header{
+    height: 80px;
+    padding: 0;
+}
+nav{
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 0 4px 4px rgb(0 0 0/0.06);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+nav a{
+    text-decoration: none;
+}
+
+.logo{
+    border-radius: 50%;
+    height: 26px;
+    margin-left: 20px;
+    padding: 12px;
+}
+.logo:hover{
+    background-color: #f0f0f0;
+}
+.inicio{
+    background-color: #000000;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 0px;
+}
+
+.hoy{
+    border: none;
+    border-radius: 40px;
+    color: #000000;
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 8px 0 0;
+    }
+.hoy:hover{
+    background-color: #f0f0f0;
+}
+
+/* ------- search bar --------- */
+nav div{
+    background-color: #f0f0f0;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding: 3px 15px;
+    width: 100%;
+}
+nav div:hover{
+    background-color: #e2e2e2;
+}
+
+.buscar{
+    background: transparent;
+    border: 0;
+    border-radius: 20px;
+    font-size: 15px;
+    height: 40px;
+    outline: none;
+    width: 100%;
+}
+
+#search{
+    color: #767676;
+}
+/* ---------- search bar end ------------ */
+
+#notifications{
+    color: #767676;
+    border-radius: 50%;
+    font-size: 30px;
+    margin: 0 0 0 8px;
+    padding: 10px;
+}
+#notifications:hover{
+    background-color: #f0f0f0;
+}
+
+#inbox{
+    color: #767676;
+    border-radius: 50%;
+    font-size: 25px;
+    margin: 0;
+    padding: 12px;
+}
+#inbox:hover{
+    background-color: #f0f0f0;
+}
+
+.profile{
+    border-radius: 50%;
+    height: 24px;
+    margin: 3px 0px 0 0px;
+    width: 24px;
+    padding: 12px;
+}
+.profile:hover{
+    background-color: #f0f0f0;
+}
+
+#expand{
+    color: #767676;
+    border-radius: 50%;
+    font-size: 25px;
+    margin: 0 13px 0 0;
+    padding: 1px;
+}
+#expand:hover{
+    background-color: #f0f0f0;
+}
+/* -------------- termina: header ----------------- */
+
+/* -------------- seccion de imagenes --------------- */
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 60px 0 60px;
+    height: fit-content;
+}
+
+main section{
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.image{
+    position: relative;
+    width: 6.23cm;
+}
+
+.image__img{
+    border-radius: .5cm;
+    display: block;
+    width: 100%;
+}
+
+.image__overlay{
+    border-radius: .5cm;
+    cursor: zoom-in;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    color: #fff;
+    opacity: 0;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+.image__overlay:hover{
+    opacity: 1;
+}
+
+.image__title{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.image__description{
+    display: flex;
+    align-self: flex-end;
+    background-color: #e60023;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.image__description:hover{
+    background-color: #ad081b;
+}
+
+.post{
+    padding: 0 0 40px 0;
+}
+
+.icons{
+    display: flex;
+    align-self: flex-end;
+}
+
+.dots{
+    background-color: rgba(255, 255, 255, 0.726);
+    border-radius: 100%;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    height: 24px;
+    width: 24px;
+}
+.dots:hover{
+    background-color: rgba(255, 255, 255, 0.863);
+}
+
+.upload{
+    background-color: rgba(255, 255, 255, 0.726);
+    border-radius: 100%;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    height: 24px;
+    width: 24px;
+}
+.upload:hover{
+    background-color: rgba(255, 255, 255, 0.863);
+}
+
+.material-icons{
+    color: #000000;
+}
+/* -------------- termina: seccion de imagenes ------------ */
+
+/* --------------------botones laterales-------------------- */
+.main-icons{
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    z-index: 3;
+}
+
+#add{
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 4px 4px rgb(0 0 0/0.06);
+    font-size: 35px;
+    padding: 10px;
+    margin-bottom: 5px;
+    z-index: 3;
+}
+#add:hover{
+    background-color: #f0f0f0;
+}
+
+#question{
+    background-color: #ffffff;
+    border-radius: 50%;
+    font-size: 35px;
+    padding: 10px;
+    margin-top: 5px;
+    box-shadow: 0 0 4px 4px rgb(0 0 0/0.06);
+    z-index: 3;
+}
+#question:hover{
+    background-color: #f0f0f0;
+}
+/* ------------- termina: botones laterales ------------ */
