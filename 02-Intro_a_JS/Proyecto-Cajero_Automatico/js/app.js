@@ -1,3 +1,8 @@
+// Funciones para el inicio
+//               Cuenta1    Cuenta2    Cuenta3
+//Usuarios       Mali       Gera       Maui
+//Contraseñas    1234       4321       2468
+
 function accesoCuenta1(form){
     if (form.u.value=="Mali") {
         if (form.c.value=="1234") {
